@@ -95,7 +95,7 @@ task driveControl()
 	  	}
 	  	else
 	    {
-	    	motor[RightMotor] = vexRT[Ch3] / 2;
+	    	motor[RightMotor] = vexRT[Ch3] / 4;
 	    }
 	  }
     else                                    // If the left joystick is within the threshold:
@@ -111,7 +111,7 @@ task driveControl()
 	  	}
 	  	else
 	    {
-	    	motor[LeftMotor] = vexRT[Ch2] / 2;
+	    	motor[LeftMotor] = vexRT[Ch2] / 4;
 	    }
 		}
     else                                    // If the right joystick is within the threshold:
