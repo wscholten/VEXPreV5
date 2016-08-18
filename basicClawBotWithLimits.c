@@ -13,8 +13,8 @@
 
 //+++++++++++++++++++++++++++++++++++++++| Global Variables |+++++++++++++++++++++++++++++++++++++++++
 int threshold = 10;					// Deadzone control of JoySticks
-int lowerLimit = 2750;				// Arm POT upper and lower limit
-int upperLimit = 1100;
+int lowerLimit = 4085;			// Arm POT upper and lower limit
+int upperLimit = 2500;
 
 //+++++++++++++++++++++++++++++++++++++++++++++| MAIN |+++++++++++++++++++++++++++++++++++++++++++++++
 
