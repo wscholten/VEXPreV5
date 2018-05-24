@@ -30,7 +30,7 @@
  * This task should never exit; it should end with some kind of infinite loop, even if empty.
  */
 
-// Drive with joystick
+
  void operatorControl() {
    int power;
    int turn;
