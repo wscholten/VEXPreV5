@@ -11,6 +11,7 @@
  */
 
 #include "main.h"
+#include "chassis.h"
 
 /*
  * Runs the user operator control code. This function will be started in its own task with the
@@ -37,15 +38,7 @@
      while (1) {
          power = joystickGetAnalog(1, 2); // vertical axis on left joystick
          turn  = joystickGetAnalog(1, 1); // horizontal axis on left joystick
-         motorSet(2, power + turn); // set left wheels
-         motorSet(3, power - turn); // set right wheels
+         chassisSet(power + turn, power - turn);
          delay(20);
      }
  }
-
-
-//void operatorControl() {
-//	while (1) {
-//		delay(20);
-//	}
-//}
