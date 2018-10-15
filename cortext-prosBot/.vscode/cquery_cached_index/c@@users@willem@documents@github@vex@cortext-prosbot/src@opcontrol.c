@@ -3,15 +3,11 @@
  *
  * This file should contain the user operatorControl() function and any functions related to it.
  *
- * Any copyright is dedicated to the Public Domain.
- * http://creativecommons.org/publicdomain/zero/1.0/
- *
  * PROS contains FreeRTOS (http://www.freertos.org) whose source code may be
  * obtained from http://sourceforge.net/projects/freertos/files/ or on request.
  */
 
 #include "main.h"
-#include "chassis.h"
 
 /*
  * Runs the user operator control code. This function will be started in its own task with the
@@ -30,15 +26,9 @@
  *
  * This task should never exit; it should end with some kind of infinite loop, even if empty.
  */
-
-
- void operatorControl() {
-   int power;
-   int turn;
-     while (1) {
-        // power = joystickGetAnalog(1, 2); // vertical axis on left joystick
-        // turn  = joystickGetAnalog(1, 1); // horizontal axis on left joystick
-         chassisSet(power + turn, power - turn);
-         delay(20);
-     }
- }
+void operatorControl() {
+	while (1) {
+		printf("Hello PROS User!\n");
+		delay(20);
+	}
+}
